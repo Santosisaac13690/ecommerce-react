@@ -41,42 +41,20 @@ function Home() {
         </div>
       </section>
 
-      <section>
-        <h2 className="collection">"NEW COLLECTION"</h2>
-
-        <div className="slideshow-container">
-
-          <div className="mySlides fade">
-            <div className="numbertext">1 / 4</div>
-            <img src={nc1} alt="p1" style={{width:"100%"}} />
-          </div>
-
-          <div className="mySlides fade">
-            <div className="numbertext">2 / 4</div>
-            <img src={nc2} alt="p2" style={{width:"100%"}} />
-          </div>
-
-          <div className="mySlides fade">
-            <div className="numbertext">3 / 4</div>
-            <img src={nc3} alt="p3" style={{width:"100%"}} />
-          </div>
-
-          <div className="mySlides fade">
-            <div className="numbertext">4 / 4</div>
-            <img src={nc4} alt="p4" style={{width:"100%"}} />
-          </div>
-
-          <button className="prev" onclick="plusSlides(-1)">&#10094;</button>
-          <button className="next" onclick="plusSlides(1)">&#10095;</button>
-
+      <h2 className="collection">"BEST SELLERS"</h2>
+      <section id="slide-container">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+        <div id="image-container">
+            <img src={nc1} id="slider-image" alt="slideImg1"/>
+            <img src={nc2} id="slider-image" alt="slideImg2"/>
+            <img src={nc3} id="slider-image" alt="slideImg3"/>
         </div>
-        <br />
-
-        <div className='textCenter'>
-          <span className="dot" onclick="currentSlide(1)"></span> 
-          <span className="dot" onclick="currentSlide(2)"></span> 
-          <span className="dot" onclick="currentSlide(3)"></span> 
-          <span className="dot" onclick="currentSlide(4)"></span>
+        <div id="button-container">
+            <a href="#slider-image-1" id="slider-button" aria-label="btn1"></a>
+            <a href="#slider-image-2" id="slider-button" aria-label="btn2"></a>
+            <a href="#slider-image-3" id="slider-button" aria-label="btn3"></a>
         </div>
       </section>
 
