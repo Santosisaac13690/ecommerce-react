@@ -1,7 +1,5 @@
 import React from 'react';
-// import './App.css';
-// import './server.js';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/MainPages/Home';
 import Contact from './components/MainPages/Contact';
 import Apparel from './components/MainPages/Apparel';
