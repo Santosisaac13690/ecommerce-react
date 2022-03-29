@@ -8,10 +8,10 @@ const path = require('path')
 // ========= CONNECTION TO DATABASE ========= //
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "Japheth6789",
-    database: "sqDatabase"
+    host: "us-cdbr-east-05.cleardb.net",
+    user: "b8b5d4904bda01",
+    password: "d09e8611",
+    database: "heroku_2ada71c0045f1b8"
 });
 
 app.use(cors());

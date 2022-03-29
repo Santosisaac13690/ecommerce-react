@@ -7,7 +7,7 @@ export default class Products extends React.Component{
 
     }
     componentDidMount(){
-        axios.get('http://localhost:3001/api/products_info').then(res => {
+        axios.get('/api/products_info').then(res => {
             this.setState({ products: res.data })
         })
     }
