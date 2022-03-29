@@ -4,7 +4,6 @@ import axios from "axios";
 export default class Products extends React.Component{
     state = {
         products: [],
-
     }
     componentDidMount(){
         axios.get('/api/products_info').then(res => {
@@ -29,4 +28,4 @@ export default class Products extends React.Component{
           </>
         )
       }
-}
+};
