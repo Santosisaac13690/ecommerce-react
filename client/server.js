@@ -7,7 +7,7 @@ const path = require('path')
 
 // ========= CONNECTION TO DATABASE ========= //
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
     host: "us-cdbr-east-05.cleardb.net",
     user: "b8b5d4904bda01",
     password: "d09e8611",
