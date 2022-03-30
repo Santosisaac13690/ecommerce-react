@@ -7,64 +7,64 @@ function Contact() {
     <div>
       <Nav />
       <main>
-        <div class="contact">
-          <div class="contactInfo">
-            <div class="box">
-              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="text">
+        <div className="contact">
+          <div className="contactInfo">
+            <div className="box">
+              <div className="icon"><i className="fas fa-map-marker-alt"></i></div>
+              <div className="text">
                 <h3>Address</h3>
                 <p>1101 Red Ventures Dr, Fort Mill, SC 29707</p>
               </div>
             </div>
-            <div class="box">
-              <div class="icon"><i class="fas fa-phone"></i></div>
-              <div class="text">
+            <div className="box">
+              <div className="icon"><i className="fas fa-phone"></i></div>
+              <div className="text">
                 <h3>Phone</h3>
                 <p>(980)296-3509</p>
               </div>
             </div>
-            <div class="box">
-              <div class="icon"><i class="far fa-envelope"></i></div>
-              <div class="text">
+            <div className="box">
+              <div className="icon"><i className="far fa-envelope"></i></div>
+              <div className="text">
                 <h3>Email</h3>
                 <p>STAYQUIET@business.com</p>
               </div>
             </div>
           </div>
 
-          <div class="form">
-            <form class="contactForm">
-              <h2>Send A Message</h2>
+          <div className="form">
+            <form className="contactForm">
+              <h2>Contact</h2>
     
-              <div class="inputBox">
+              <div className="inputBox">
                 <label>
-                Full Name
+                Name &#42;
                 <input type="text" name="contact" required="required" />
                 </label>
               </div>
     
-              <div class="inputBox">
+              <div className="inputBox">
                 <label>
-                Email
+                Email &#42;
                 <input type="email" name="contact" required="required" />
                 </label>
               </div>
     
-              <div class="inputBox">
+              <div className="inputBox">
                 <label>
                 Number
-                <input type="text" name="contact" required="required" />
+                <input type="text" name="contact" />
                 </label>
               </div>
     
-              <div class="inputBox">
+              <div className="inputBox">
                 <label>
-                Type your Message...
+                Message &#42;
                 <textarea name="contact" required="required"></textarea>
                 </label>
               </div>
     
-              <div class="inputBox">
+              <div className="inputBox">
                 <input type="submit" name="submit" value="Send" />
               </div>
             </form>

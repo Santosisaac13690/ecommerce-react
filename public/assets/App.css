@@ -591,7 +591,7 @@ form input[type="button"]{
   box-shadow: 2px 2px 2px darkslategray;
 }
 
-.row1 {
+.row {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -601,7 +601,7 @@ form input[type="button"]{
   flex-wrap:wrap;
 }
 
-.row1Items {
+.rowItems {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -610,7 +610,7 @@ form input[type="button"]{
 
 }
 
-.row1Items img{
+.rowItems img{
   width: 338px;
   height: auto;
 }
@@ -619,22 +619,22 @@ form input[type="button"]{
   display: none;
 }
 
-.row1Items:hover .productFront{
+.rowItems:hover .productFront{
   display: none;
 }
 
-.row1Items:hover .productBack{
+.rowItems:hover .productBack{
   display: block;
 
 }
 
-.row1Items:hover {
+.rowItems:hover {
   cursor: pointer;
   opacity: 75%;
   transition: 1s;
 }
 
-.row1Items p {
+.rowItems p {
   text-align: center;
   margin: 10px;
   font-weight: 500;

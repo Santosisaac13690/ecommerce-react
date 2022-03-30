@@ -8,7 +8,7 @@ function Cart() {
     <div>
       <Nav />
       <section>
-        <div class="cartPage">
+        <div className="cartPage">
           <h2>YOUR CART IS EMPTY.</h2>
           <Link to="/apparel" className="cShopping">"CONTINUE SHOPPING"</Link>
         </div>

@@ -1,64 +1,31 @@
 import React from 'react';
-import products from '../../Products.json';
+import axios from "axios";
 
-function Products() {
-  return (
-      <>
-        <div className="row1">
-                {products.apparel1.map((card) => {
-                    return (
-                        <div className="row1Items">
-                            <img src={card.image} alt={card.imageAlt} className="productFront" />
-                            <img src={card.imageBack} alt={card.imageAlt} className="productBack" />
-                            <p>{card.description}</p>
-                            <p>{card.price}</p>
-                        </div>
-                    )
-                })}
-        </div>
-
-        <div className="row1">
-                {products.apparel2.map((card) => {
-                    return (
-                        <div className="row1Items">
-                            <img src={card.image} alt={card.imageAlt} className="productFront" />
-                            <img src={card.imageBack} alt={card.imageAlt} className="productBack" />
-                            <p>{card.description}</p>
-                            <p>{card.price}</p>
-                        </div>
-                    )
-                })}
-        </div>
-
-        <div className="row1">
-                {products.apparel3.map((card) => {
-                    return (
-                        <div className="row1Items">
-                            <img src={card.image} alt={card.imageAlt} className="productFront" />
-                            <img src={card.imageBack} alt={card.imageAlt} className="productBack" />
-                            <p>{card.description}</p>
-                            <p>{card.price}</p>
-                        </div>
-                    )
-                })}
-        </div>
-
-        <div className="row1">
-                {products.apparel4.map((card) => {
-                    return (
-                        <div className="row1Items">
-                            <img src={card.image} alt={card.imageAlt} className="productFront" />
-                            <img src={card.imageBack} alt={card.imageAlt} className="productBack" />
-                            <p>{card.description}</p>
-                            <p>{card.price}</p>
-                        </div>
-                    )
-                })}
-        </div>
-    </>
-
-    
-  )
-}
-
-export default Products;
+export default class Products extends React.Component{
+    state = {
+        products: [],
+    }
+    componentDidMount(){
+        axios.get('/api/products_info').then(res => {
+            this.setState({ products: res.data })
+        })
+    }
+    render() {
+        return (
+            <>
+              <div className="row">
+                      {this.state.products.map((card) => {
+                          return (
+                              <div className="rowItems">
+                                  <img src={card.front_image} alt={card.image_alt} className="productFront" />
+                                  <img src={card.back_image} alt={card.image_alr} className="productBack" />
+                                  <p>{card.product_description}</p>
+                                  <p>${card.product_price}</p>
+                              </div>
+                          )
+                      })}
+              </div>
+          </>
+        )
+      }
+};

@@ -14,13 +14,17 @@ function Apparel() {
           <form>
             <label>Sort By:</label>
             <select name="list" id="list" >
-              <option value="">Collections</option>
-              <option value="">Hoodies</option>
-              <option value="">Sweaters</option>
-              <option value="">Shirts</option>
-              <option value="">Accessories</option>
-              <option value="">Low to High</option>
-              <option value="">High to Low</option>
+              <optgroup label="Categories">
+                <option value="hoodies">Hoodies</option>
+                <option value="sweaters">Sweaters</option>
+                <option value="shirts">Shirts</option>
+                <option value="accessories">Accessories</option>
+              </optgroup>
+              
+              <optgroup label="Price">
+                <option value="lth">Low to High</option>
+                <option value="htl">High to Low</option>
+              </optgroup>
             </select>
             <input type='button' value="Go" onclick="goToNewPage()" />
           </form>

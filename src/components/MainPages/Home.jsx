@@ -1,10 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Nav from '../Reusable/Nav'
 import Footer from '../Reusable/Footer';
 import { Link } from 'react-router-dom';
 import Bestseller from './Bestseller';
+import axios from "axios";
 
 function Home() {
+
+  const [userEmail, setUserEmail] = useState("");
+
+  const submitEmail = () => {
+    axios.post("https://isaac-stayquiet.herokuapp.com/api/insert", { user_email: userEmail }).then(() => {
+      alert('succesful insert');
+    });
+  };
+
   return (
     <div>
       <Nav />
@@ -57,12 +67,15 @@ function Home() {
             <div className="emailFlex">
               <div className="email">
               <label>
-                  <input type="email" name="email" placeholder="ENTER YOUR EMAIL" className="email" required />
+                  <input type="email" name="userEmail" placeholder="ENTER YOUR EMAIL" className="email" required 
+                  onChange={(e) => {
+                    setUserEmail(e.target.value);
+                  }}/>
               </label>
               </div>
               <div className="submit">
               <label>
-                  <input type="submit" name="submit" value="SUBSCRIBE" className="submit" />
+                  <input type="submit" name="submit" value="SUBSCRIBE" className="submit" onClick={submitEmail}/>
               </label>
               </div>
             </div>
