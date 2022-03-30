@@ -22,6 +22,7 @@ export default class Products extends React.Component{
                                   <img src={card.back_image} alt={card.image_alt} className="productBack" />
                                   <p>{card.product_description}</p>
                                   <p>${card.product_price}</p>
+                                  <button>"ADD TO CART"</button>
                               </div>
                           )
                       })}

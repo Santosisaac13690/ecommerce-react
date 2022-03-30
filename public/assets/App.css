@@ -616,6 +616,13 @@ form input[type="button"]{
   height: auto;
 }
 
+.rowItems button {
+  padding: 10px 20px;
+  color: white;
+  background-color: darkslategray;
+  border-radius: 5px;
+}
+
 .productBack {
   display: none;
 }
