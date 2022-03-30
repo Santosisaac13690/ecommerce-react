@@ -1,7 +1,6 @@
 import React from 'react';
 import Nav from '../Reusable/Nav';
 import Footer from '../Reusable/Footer';
-import Products from './Products';
 
 function Apparel() {
   return (
@@ -19,7 +18,6 @@ function Apparel() {
                 <option value="htl">High to Low</option>
               </optgroup>
             </select>
-            <input type='button' value="Go" onclick="goToNewPage()" />
           </form>
 
           <form>
@@ -32,7 +30,6 @@ function Apparel() {
                 <option value="accessories">Accessories</option>
               </optgroup>
             </select>
-            <input type='button' value="Go" onclick="goToNewPage()" />
           </form>
         </div>
 
