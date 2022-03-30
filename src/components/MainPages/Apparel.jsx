@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../Reusable/Nav';
 import Footer from '../Reusable/Footer';
+import Products from './Products';
 
 function Apparel() {
   return (
