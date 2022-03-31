@@ -46,7 +46,7 @@ function Contact() {
               <div className="inputBox">
                 <label>
                 Email &#42;
-                <input type="email" name="contact" required="required" />
+                <input type="email" name="contact" required="@" />
                 </label>
               </div>
     
