@@ -13,6 +13,9 @@ body{
   width: 100%;
 }
 
+
+/*----- NAV STYLES -----*/
+
 nav ul {
   list-style-type: none;
   overflow: hidden;
@@ -24,8 +27,6 @@ nav ul {
   align-items: center;
   align-content: center;
 }
-
-/*----- NAV STYLES -----*/
   
 nav li a {
   display: block;
@@ -37,12 +38,12 @@ nav li a {
 }
   
 nav .title{
-  padding-right: 20vw;
-  font-size: 50px;
+  padding-right: 15vw;
+  
 }
 
 nav .cart{
-    padding-left: 20vw;
+    padding-left: 15vw;
 }
 
   
@@ -126,17 +127,18 @@ footer ul li a:hover {
   color: #fff;
   margin-left: 5px;
   margin-right: 5px;
-  font-size: 80px;
+  font-size: 80px;  
 }
   
 .headDesc{
   text-align: center;
   color: #fff;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 400;
+  padding: 0px;
 }
   
 .button{
@@ -366,7 +368,7 @@ span {
 }
 
 .email input{
-  width: 300px;
+  width: 200px;
   height: 52px;
   padding: 10px;
   font-size: 16px;
@@ -567,7 +569,7 @@ label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .apparelSort label {
@@ -578,7 +580,7 @@ label {
 .results {
   font-weight: 400;
   color: darkslategray;
-  padding-top: 5px;
+  margin: 10px;
 }
 
 form input[type="button"]{
@@ -617,10 +619,11 @@ form input[type="button"]{
 }
 
 .rowItems button {
-  padding: 10px 20px;
+  padding: 10px 15px;
   color: white;
   background-color: darkslategray;
-  border-radius: 5px;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .productBack {
@@ -653,13 +656,16 @@ form input[type="button"]{
 
 @media only screen and (max-width: 730px) {
   nav .title{
-    padding-right: 4vw;
+    padding-right: 2vw;
   }
   
   nav .cart{
-      padding-left: 4vw;
+      padding-left: 2vw;
   }
 
+  nav li a {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 1149px) {
@@ -667,4 +673,17 @@ form input[type="button"]{
     margin-left: 40vw;
     margin-right: 40vw;
   }
+}
+
+@media only screen and (max-width: 668px) {
+  .button {
+    margin-left: 30vw;
+    margin-right: 30vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .headName{
+    font-size: 40px;  
+  } 
 }

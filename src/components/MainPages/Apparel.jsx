@@ -22,7 +22,7 @@ function Apparel() {
           </form>
 
           <form>
-            <label>Filter by:</label>
+            <label>Filter By:</label>
             <select name="list" id="list" >
               <optgroup label="Categories">
                 <option value="hoodies">Hoodies</option>
