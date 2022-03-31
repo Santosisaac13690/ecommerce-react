@@ -10,7 +10,7 @@ function Contact() {
   const [userPhoneNumber, setPhoneNumber] = useState("");
   const [userMessage, setMessage] = useState("");
 
-  const submitEmail = () => {
+  const submitMessage = () => {
     axios.post("https://isaac-stayquiet.herokuapp.com/api/insert", {
         user_name: userName, 
         user_email: userEmail,
@@ -91,7 +91,7 @@ function Contact() {
               </div>
     
               <div className="inputBox">
-                <input type="submit" name="submit" value="Send" />
+                <input type="submit" name="submit" value="Send" onClick={submitMessage} />
               </div>
             </form>
 
