@@ -43,14 +43,14 @@ app.post("/api/insert", (req, res) => {
 
 // ========= FORM DB ========= //
 
-app.post("/api/insert", (req, res) => {
+app.post("/api/form", (req, res) => {
     const userName = req.body.user_name;
-    const userEmail = req.body.user_email;
+    const userEmailAddress = req.body.user_email;
     const userPhoneNumber = req.body.user_phone_number;
     const userMessage = req.body.user_message;
 
     const sqlInsert = "INSERT INTO user_contact_form (user_name, user_email, user_phone_number, user_message) VALUES (?, ?, ?, ?);";
-    db.query(sqlInsert, [userName, userEmail, userPhoneNumber, userMessage], (err, result) => {
+    db.query(sqlInsert, [userName, userEmailAddress, userPhoneNumber, userMessage], (err, result) => {
         console.log(err)
     });
 });

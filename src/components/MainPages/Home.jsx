@@ -10,7 +10,9 @@ function Home() {
   const [userEmail, setUserEmail] = useState("");
 
   const submitEmail = () => {
-    axios.post("https://isaac-stayquiet.herokuapp.com/api/insert", { user_email: userEmail }).then(() => {
+    axios.post("https://isaac-stayquiet.herokuapp.com/api/insert", { 
+        user_email: userEmail 
+      }).then(() => {
       alert('succesful insert');
     });
   };

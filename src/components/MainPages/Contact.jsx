@@ -6,16 +6,16 @@ import axios from 'axios';
 function Contact() {
 
   const [userName, setName] = useState("");
-  const [userEmail, setEmail] = useState("");
+  const [userEmailAddress, setEmail] = useState("");
   const [userPhoneNumber, setPhoneNumber] = useState("");
   const [userMessage, setMessage] = useState("");
 
   const submitMessage = () => {
-    axios.post("https://isaac-stayquiet.herokuapp.com/api/insert", {
+    axios.post("https://isaac-stayquiet.herokuapp.com/api/form", {
         user_name: userName, 
-        user_email: userEmail,
+        user_email: userEmailAddress,
         user_phone_number: userPhoneNumber,
-        user_message: userMessage,
+        user_message: userMessage
       }).then(() => {
       alert('succesful insert');
     });
